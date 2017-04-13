@@ -30,6 +30,7 @@ public class MenuController {
     @Autowired
     CheeseDao cheeseDao;
 
+    // Request path: /menu
     @RequestMapping(value = "")
     public String index(Model model) {
 
@@ -104,4 +105,5 @@ public class MenuController {
 
         return "redirect:view/" + theMenu.getId();
     }
+
 }
